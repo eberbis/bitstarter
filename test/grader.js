@@ -26,18 +26,6 @@ var program = require('commander');
 var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
-var rest = require('restler');
-var util = require('util');
-
-var HTMLFILE_URL = rest.get('http://protected-garden-6308.herokuapp.com/').on('complete', function(result) {
-    if (result instanceof Error) {
-    utils.puts('Error: ' + result.message);
-    utils.puts('Will retry in 3 seconds');
-    this.retry(3000); // try again after 3 seconds
-  } else {
-    HTMLFILE_DEFAULT = result;
-  }
-});
 
 var assertFileExists = function(infile) {
     var instr = infile.toString();
@@ -75,18 +63,12 @@ var clone = function(fn) {
 
 if(require.main == module) {
     program
-        .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
-        .option('-u, --url <url_page>', 'Path to url page', HTMLFILE_URL)
-	.parse(process.argv);
+        .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
+        .parse(process.argv);
     var checkJson = checkHtmlFile(program.file, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
-    fs.writeFile(__dirname + '/json-output.txt', outJson, function(err) {
-	if (err) throw err;
-	console.log('File containing the JSON output has been saved!');
-	console.log('(' + __dirname + '/json-output.txt)');
-    });
 } else {
     exports.checkHtmlFile = checkHtmlFile;
 }
