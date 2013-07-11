@@ -1,2 +1,2 @@
-["h1", 
+["html", "head", "body", "h1","p", "div", "div div", "div div div", "div div div.logo", "div.navigation", "div.heading", "div.subheading", "div.pitch", "div.section1", "div.section2", "div.faq", "div.footer", 
 ".navigation", ".logo", ".blank", ".about", ".heading", ".subheading", ".pitch", ".video", ".thermometer", ".order", ".social", ".section1", ".section2", ".faq", ".footer"]  
