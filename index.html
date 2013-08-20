@@ -1,197 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>S-United</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-    <script src="./responsive-index_files/startup-code-jquery.js"></script>
-    <script src="./responsive-index_files/startup-code-bootstrap.js"></script>
-    <link href="./responsive-index_files/css" rel="stylesheet" type="text/css">
-    <link href="./responsive-index_files/css(1)" rel="stylesheet" type="text/css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
+          rel="stylesheet" type="text/css">
     <style type="text/css">
 
-         /* Large desktop */
-         @media (min-width: 980px) {
-           body {
-             padding-top: 60px;
-           }
-           .linediv-l {
-             border-right: 1px white solid;
-           }
-           .linediv-r {
-             border-left: 1px white solid;
-           }
-         }
-
-         /* Landscape phones and down */
-         @media (max-width:480px) {
-            .copy {
-                padding: 2.5% 10%;
-            }
-            .linediv-l {
-                border-bottom: 1px white solid;
-            }
-            .linediv-r{
-                border-top: 1px white solid;
-            }
-         }
-
-         /* All form factors */
-
-         /* Main body and headings */
-         body{
-            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-         }
-         .heading, .subheading {
-            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-            text-align: center;
-         }
-         p.lead {
-            padding-top: 1.5%;
-            font-size: 24px;
-            line-height: 30px;
-         }
-         p {
-            font-size: 18px;
-            line-height: 24px;
-         }
-
-         /* Video pitch and Action */
-         .pitch {
-            padding: 2.5% 0%;
-         }
-         .order {
-            padding: 2% 0%;
-         }
-         .actions {
-            background-color: #343434;
-            padding: 3% 0%;
-         }
-         .video, .thermometer, .order, .social, .statistics {
-            text-align: center;
-         }
-         .statistics h3, .statistics p {
-            color: white;
-         }
-
-         /* Marketing Copy and Footer */
-         .copy {
-            padding-top: 2.5%;
-            padding-bottom: 2.5%;
-            text-align: justify;
-         }
-         .asset {
-            padding: 2.5% 0%;
-         }
-         .footer {
-            color: #cccccc;
-            text-align: center;
-         }
-         .footer p {
-            font-size: 11px;
-         }
-         .footer a {
-            color: #ccccff;
-         }
-         /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
-        div.addthis_toolbox {
-            width:180px;
-            margin: 0 auto;
+    /* Large desktop */
+    @media (min-width: 980px) {
+        body {
+            padding-top: 60px;
         }
-     </style>
+        .linediv-l {
+            border-right: 1px white solid;
+        }
+        .linediv-r {
+            border-left: 1px white solid;
+        }
+    }
+
+    /* Landscape phones and down */
+    @media (max-width:480px) {
+        .copy {
+            padding: 2.5% 10%;
+        }
+        .linediv-l {
+            border-bottom: 1px white solid;
+        }
+        .linediv-r{
+            border-top: 1px white solid;
+        }
+    }
+
+    /* All form factors */
+
+    /* Main body and headings */
+    body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Video pitch and Action */
+    .pitch {
+        padding: 2.5% 0%;
+    }
+    .order {
+        padding: 2% 0%;
+    }
+    .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+    }
+    .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+    }
+    .statistics h3, .statistics p {
+        color: white;
+    }
+
+    /* Marketing Copy and Footer */
+    .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+    }
+    .asset {
+        padding: 2.5% 0%;
+    }
+    .footer {
+        color: #cccccc;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 11px;
+    }
+    .footer a {
+        color: #ccccff;
+    }
+    /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
+    div.addthis_toolbox {
+        width:180px;
+        margin: 0 auto;
+    }
+    </style>
     <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-42973580-1']);
-      _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42973580-1']);
+    _gaq.push(['_trackPageview']);
 
-      (function() {
+    (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    })();
 
     </script>
-  </head>
-    <body>
+</head>
+<body>
 
-        <!-- Mobile-Friendly navbar adapted from example. -->
-        <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <button type="button" class="btn btn-navbar"
-                            data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="#">S-United</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div><!-- .nav-collapse -->
-                </div>
-            </div>
+    <!-- Mobile-Friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar"
+                data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">S-United</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- .nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<!-- We use row-fluid inside containers to achieve a resizable layout. -->
+<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-desings-using-bootstrap/ -->
+<!-- http://stackoverflow.com/a/12270322 -->
+<div class="container">
+    <!-- Font and paired font of .heading/ .subheading and body from Google Fonts -->
+    <!-- www.google.com/fonts/specimen/Ubuntu -->
+    <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+    <div class="row-fluid heading">
+        <div class="span12">
+            <h1>S-United</h1>
+        </div>
+    </div>
+    <div class="row-fluid subheading">
+        <div class="span12">
+            <!-- Special typography from Bootstrap for lead paragraph. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+            <p class="lead">Let Know &amp Get 2 Know</p>
+        </div>
+    </div>
+    <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+            <!-- <img class="img-polaroid"> -->
+            <iframe width="400" height="300" src="//www.youtube.com/embed/oqTOEPL7ENA" frameborder="0" allowfullscreen>
+            </iframe>
+            <!-- </img> -->
         </div>
 
-        <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-        <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-desings-using-bootstrap/ -->
-        <!-- http://stackoverflow.com/a/12270322 -->
-        <div class="container">
-            <!-- Font and paired font of .heading/ .subheading and body from Google Fonts -->
-            <!-- www.google.com/fonts/specimen/Ubuntu -->
-            <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-            <div class="row-fluid heading">
-                <div class="span12">
-                    <h1>S-United</h1>
-                </div>
-            </div>
-            <div class="row-fluid subheading">
-                <div class="span12">
-                    <!-- Special typography from Bootstrap for lead paragraph. -->
-                    <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-                    <p class="lead">Let Know &amp Get 2 Know</p>
-                </div>
-            </div>
-            <div class="row-fluid pitch">
-                <div class="span5 offset1 video">
-                    <!-- <img class="img-polaroid"> -->
-                        <iframe width="400" height="300" src="//www.youtube.com/embed/oqTOEPL7ENA" frameborder="0" allowfullscreen>
-                        </iframe>
-                    <!-- </img> -->
-                </div>
-
-                <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
-                <div class="span5 actions">
-                    <div class="row-fluid">
-                    <div class="span8 offset2">
-                        <div class="row-fluid statistics">
-                            <div class="span4">
-                                <!-- linediv-l and linediv-r give dividings lines that look different in horizontal and vertical layouts, illustrating media queries. -->
-                                <div class="linediv-l">
-                                    <h3>1000</h3> <p>backers<p>
-                                </div>
+        <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
+        <div class="span5 actions">
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <div class="row-fluid statistics">
+                        <div class="span4">
+                            <!-- linediv-l and linediv-r give dividings lines that look different in horizontal and vertical layouts, illustrating media queries. -->
+                            <div class="linediv-l">
+                                <h3>1000</h3> <p>backers<p>
                             </div>
-                            <div class="span4">
-                                <div class="linediv-c">
-                                    <h3>$0.00</h3> <p>of $150,000</p>
-                                </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-c">
+                                <h3>$0.00</h3> <p>of $150,000</p>
                             </div>
-                            <div class="span4">
-                                <div class="linediv-r">
-                                    <h3>180</h3> <p>days left</p>
-                                </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-r">
+                                <h3>180</h3> <p>days left</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row-fluid">
+                </div>
+                <div class="row-fluid">
                     <div class="span10 offset1">
                         <!-- Bootstrap progress bar -->
                         <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -200,8 +201,8 @@
                             <div class="bar bar-warning" style="width: 100%;"></div>
                         </div>
                     </div>
-                    </div>
-                    <div class="row-fluid">
+                </div>
+                <div class="row-fluid">
                     <div class="span6 offset3 order">
                         <!-- Standard Bootstrap button. -->
                         <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
@@ -212,8 +213,8 @@
                         data-code="55539e979485efc4a27ec04eeae1c39c" href="https://coinbase.com/checkouts/55539e979485efc4a27ec04eeae1c39c">Preorder With Bitcoin</a>
                         <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
                     </div>
-                    </div>
-                    <div class="row-fluid">
+                </div>
+                <div class="row-fluid">
                     <div class="span8 offset2 social">
                         <!-- AddThis Button BEGIN-->
                         <!-- Social buttons are not included in default Bootstrap. -->
@@ -231,116 +232,113 @@
                         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51ffbba57554d94d"></script>
                         <!-- AddThis Button END -->
                     </div>
-                    </div>
-                </div>
                 </div>
             </div>
+</div>
+</div>
 
-            <!-- Beyond this part the marketing copy begins. -->
-            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-            <!-- http://placehold.it -->
-            <div class="row-fluid section1">
-                <div class="span5 offset1 asset">
-                    <!-- <img class="img-polaroid" src="images/customers.jpg"> -->
-                    <img class="img-polaroid" alt="Navigating International Business Culture Photo - Customer Oriented"src="http://drupal.in-cdn.net/cdn/article/public/navigating_international_business_culture.jpg">
+<!-- Beyond this part the marketing copy begins. -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+<!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+<!-- http://placehold.it -->
+<div class="row-fluid section1">
+    <div class="span5 offset1 asset">
+        <!-- <img class="img-polaroid" src="images/customers.jpg"> -->
+        <img class="img-polaroid" alt="Navigating International Business Culture Photo - Customer Oriented"src="http://drupal.in-cdn.net/cdn/article/public/navigating_international_business_culture.jpg">
 
-                </div>
-                <div class="span5 copy">
-                    <p>
-                        <b>Customer-oriented:</b> as a customer, we always have doubts about whether to buy products from this or that company. We need to have some feedback, some valorations upfront so we will at least make an informed decision. Even more if we deal with startups.<br>
-                        Here at S-United, we give users the option to provide micro-cromments about their experience with a specific service or product, accompaning those with a rating.<br>
-                        That way, you will have a clear view of the startups results in terms of commitment, efficiency and experience.
-                    </p>
-                </div>
-            </div>
+    </div>
+    <div class="span5 copy">
+        <p>
+            <b>Customer-oriented:</b> as a customer, we always have doubts about whether to buy products from this or that company. We need to have some feedback, some valorations upfront so we will at least make an informed decision. Even more if we deal with startups.<br>
+            Here at S-United, we give users the option to provide micro-cromments about their experience with a specific service or product, accompaning those with a rating.<br>
+            That way, you will have a clear view of the startups results in terms of commitment, efficiency and experience.
+        </p>
+    </div>
+</div>
 
-            <div class="row-fluid section2">
-                <div class="span5 offset1 copy copy-right">
-                    <p>
-                        <b>Business-oriented:</b> as a business person, you want to close deals with the best of startups and more specifically, ones with the best price/quality relationship. You want to pay exactly for what you are buying. As we do all.<br>
-                        With our rating system, you will be able to sort startups based on their rating, pricing and location, so you may choose the one that best fits your needs.<br>
-                        Micro-comments will just help you see their strong and weak points, why they can be a good partner or why you should skip certain startups.
-                    </p>
-                </div>
-                <div class="span5 asset">
-                    <!-- <img class="img-polaroid" src="images/mapamundi.jpg"> -->
-                    <img class="img-polaroid" alt="International Photo - Business Oriented"src="http://www.choosemontgomerymd.com/images/photos/International_photo.jpg">
-                </div>
-            </div>
+<div class="row-fluid section2">
+    <div class="span5 offset1 copy copy-right">
+        <p>
+            <b>Business-oriented:</b> as a business person, you want to close deals with the best of startups and more specifically, ones with the best price/quality relationship. You want to pay exactly for what you are buying. As we do all.<br>
+            With our rating system, you will be able to sort startups based on their rating, pricing and location, so you may choose the one that best fits your needs.<br>
+            Micro-comments will just help you see their strong and weak points, why they can be a good partner or why you should skip certain startups.
+        </p>
+    </div>
+    <div class="span5 asset">
+        <!-- <img class="img-polaroid" src="images/mapamundi.jpg"> -->
+        <img class="img-polaroid" alt="International Photo - Business Oriented"src="http://www.choosemontgomerymd.com/images/photos/International_photo.jpg">
+    </div>
+</div>
 
-            <div class="row-fluid section3">
-                <div class="span5 offset1 asset">
-                    <!-- <img class="img-polaroid" src="images/investor_handshake.jpg"> -->
-                    <img class="img-polaroid" alt="Business Handshake Photo - Investors Oriented"src="http://goradiacapital.com/wp-content/uploads/2013/02/business-handshake.jpg">
-                </div>
-                <div class="span5 copy">
-                    <p>
-                        <b>Investors-oriented:</b> as a investor you want to actually make a safe inversion (who doesn't, right?). We have seen tons of cases where what you saw in a visit to a potential investment, turned out to be far from reality.<br>
-                        Thanks to our rating system and micro-comments, you will actually see real feedback from the most valuable source: the customers themselves.<br>
-                        Needless to say, this plays a very important role to those startups seeking VCs interested in their projects as motivation to provide an honest assesment is served.
-                    </p>
-                </div>
-            </div>
+<div class="row-fluid section3">
+    <div class="span5 offset1 asset">
+        <!-- <img class="img-polaroid" src="images/investor_handshake.jpg"> -->
+        <img class="img-polaroid" alt="Business Handshake Photo - Investors Oriented"src="http://goradiacapital.com/wp-content/uploads/2013/02/business-handshake.jpg">
+    </div>
+    <div class="span5 copy">
+        <p>
+            <b>Investors-oriented:</b> as a investor you want to actually make a safe inversion (who doesn't, right?). We have seen tons of cases where what you saw in a visit to a potential investment, turned out to be far from reality.<br>
+            Thanks to our rating system and micro-comments, you will actually see real feedback from the most valuable source: the customers themselves.<br>
+            Needless to say, this plays a very important role to those startups seeking VCs interested in their projects as motivation to provide an honest assesment is served.
+        </p>
+    </div>
+</div>
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
+<!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+<!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+<!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+    <div class="row-fluid faq">
+        <div class="span10 offset1">
             <h3>FAQ</h3>
             <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            What does FAQ stand for?
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            Frequently Asked Question.
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            What's a Frequently Asked Question?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            A question which is commonly asked by users.
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
         </div>
-      </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-42973580-1', 'herokuapp.com');
-      ga('send', 'pageview');
+<!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+<!-- http://creativecommons.org/licenses/ -->
+<div class="row-fluid footer">
+    <div class="span12">
+        <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+            By-SA 3.0
+        </a>, without all the cruft that would otherwise be
+        put at the bottom of the page.</p>
+    </div>
+</div>
+</div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-42973580-1', 'herokuapp.com');
+ga('send', 'pageview');
 </script>
-  </body>
+</body>
 </html>
